@@ -12,13 +12,13 @@ public class ReverseArray {
 
         for (int i = 0; i < userInput.length; i++) {
             try {
-				userInput[i] = scanner.nextInt();
-			  //The exception that needs to be handled
+		userInput[i] = scanner.nextInt();
+		//The exception that needs to be handled
             } catch (InputMismatchException e) {
                 scanner.nextLine();
-				System.out.println("Invalid input! Please enter a valid integer.");
-				// Decrement i so that the next element now has this index
-				i--;
+		System.out.println("Invalid input! Please enter a valid integer.");
+		// Decrement i so that the next element now has this index
+		i--;
 				
             }
         }
